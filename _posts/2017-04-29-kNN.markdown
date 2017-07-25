@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "Nearest Neighbours"
+date:   2017-04-29 01:05:31 -0400
+categories: machine learning
+permalink: /machinelearning/nearest-neighbours
+---
+
+
+
+
+
+Hello MF
+========
+
+Nearest Neighours is one of the most widely used machine learning techniques in order to do classification for discrete labels and regression for continous labels. 
+
+It basically works in the sense of re-organinzing the training data such that the ones which are more similar than others are closer to each other. The measurement of this closeness is often the Euclidean Distance but there are many other metrics used depending upon the goal of the problem and the model you're trying to build. 
+
+As discussed previously, this post would be drawing from the order and structure of scikit-learn documenation of the same technique and, I highly recommend you guys to go through it. I will try to explain more about the theory and the scikit-learn functions which can be used to work with your problems using the classes in [sklearn.neighbours][sklearn-neighbours]
+
+{% highlight ruby %}
+def print_hi(name):
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+
+
+<b>Nearest-Neighbours Algorithms</b>
+==============================
+As mentioned before, NN techniques are widely used in many different applications and domains and, there is always a need to find better and faster algorithm which can work efficiently with large number of samples. We are going to talk about the 3 widely used approaches and also see their implementaion using scikit-learn and its classes. The scikit documenation is full of examples and more detailed discussions and so for further learning, I highly recommend going through that. Either way, I will try to cover the most import aspects of the algorithms and their implemenations and, it should be enough for you to implement this technique in your work. Alright, here we go.
+
+#### Brute Force Approach 
+
+I know what you're thinking, atleast some of you. "This can't be the best approach.". And you're right, it isn't. But its customary to always start with the least efficient method and then grow on from there. But before we discard this method, lets talk a little about it. 
+It basically computes the distances between all pairs of points in the dataset and, tries to bring out samples closer to each other         (building neighbours) based on these computed distances. Its clear to see how this is a bad way to go, if dataset becomes larger and larger. As dataset consisting N samples grows, the time complexity grows as O(dN^2), where d is the dimensions of the dataset. However, Brute-force can be a good choice given that the dataset isn't very large can certainly be used because of its simplicity. 
+
+
+
+
+
+
+
+
+
+
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
+[sklearn-neighbours] : https://google.com
