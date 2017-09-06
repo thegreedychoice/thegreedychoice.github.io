@@ -9,4 +9,4 @@ permalink: /machinelearning/distributions
 
 <br/>
 
-<h3 style="color:#2a7ae2"> Introduction </h3>
+<h3 style="color:#2a7ae2"> Co </h3>
