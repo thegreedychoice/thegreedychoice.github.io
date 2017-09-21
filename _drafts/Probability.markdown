@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Probability Theory"
-date:   2017-04-29 01:05:31 -0400
+date:   2017-06-29 01:05:31 -0400
 categories: machine learning
-permalink: /machinelearning/probability
+permalink: /machinelearning/probability-theory-part1
 
 ---
 
@@ -202,8 +202,11 @@ $$ Unif(x|a,b) = \frac{1}{b-a} I(a \leq X \leq b) $$
 If we set a = 0 and b = \(\frac{1}{2}\), the value of p(x) = 2, for any x \(\epsilon  [0, \frac{1}{2}]\).  
 </p>
 </section>
-
-
+<p> <b>
+	End of Part 1
+</b>
+</p>
+<p> The second part of this post covering continous RVs and distributions will soon be up. </p>
 
 
 
