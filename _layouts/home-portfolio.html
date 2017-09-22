@@ -12,7 +12,7 @@
   <title>Shubham Shukla - Portfolio/Resume/CV</title>
 
   <!-- Web Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
   <!-- Bootstrap core CSS -->
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
   <!-- Font Awesome CSS -->
@@ -39,6 +39,15 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
 
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_olpU7iQIbdUwjiCyKkTLQ");
+   })();
+
+
+</script>
 </head>
 
 <body>
@@ -740,7 +749,7 @@
           <div class="col-md-6">
             <div class="contact-form">
               <strong>Send me a message</strong>
-              <form name="contact-form" method="post" action="assets/php/sendemail.php">
+              <form name="contact-form">
                 <div class="form-group">
                   <label for="InputName1">Name</label>
                   <input type="text" name="name" class="form-control" id="InputName1" required="">
@@ -758,7 +767,7 @@
                   <textarea name="message" class="form-control" id="InputTextarea" rows="5" required=""></textarea>
                 </div>
 
-                <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
+                <button type="button" id="email_btn" name="submit" class="btn btn-primary" >Send Message</button>
               </form>
             </div>
           </div><!-- /.col-md-6 -->
@@ -832,5 +841,6 @@
   <script src="assets/js/jquery.fitvids.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
   <script src="assets/js/scripts.js"></script>
+
 </body>
 </html>

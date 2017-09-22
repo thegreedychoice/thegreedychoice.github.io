@@ -157,6 +157,30 @@ jQuery(function ($) {
     });
 
 
+    // EMAIL
+
+    (function(){
+        $('#email_btn').click(function(e){
+        // parameters: service_id, template_id, template_parameters
+        var $from_name = document.getElementById('InputName1').value
+        var $from_email = document.getElementById('InputEmail1').value
+        var $subject = document.getElementById('InputSubject').value
+        var $message = document.getElementById('InputTextarea').value
+
+        emailjs.send("gmail","template_rP213xHz",{to_name: "Shubham", from_name: $from_name, reply_to: $from_email, subject: $subject, message_html: $message})
+        .then(function(response) {
+            alert("Thank you for contacting me. I'll get in touch as early as possible.")
+           console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+        }, function(err) {
+            alert("Email Send Failed!. Please try again.")
+           console.log("FAILED. error=", err);
+        });
+    });
+    })
+
+
+
+
     // -------------------------------------------------------------
     // Shuffle
     // -------------------------------------------------------------
