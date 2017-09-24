@@ -12,10 +12,10 @@ permalink: /machinelearning/dimensionality-reduction-part1-vector-spaces
 <h3 style="color:#2a7ae2">  Introduction </h3>
 
 <section>
-	<strong>
+	<strong> <i>
 	In machine learning and statistics, dimensionality reduction or dimension reduction is the  process of reducing the number of random variables under consideration, via obtaining a set of principal variables. It can be divided into feature selection and feature extraction. <br>
 										~wikipedia
-	</strong>
+	</i></strong>
 </section>
 
 <br>
@@ -37,6 +37,8 @@ If you aren't familiar with vector spaces, I highly suggest to go through this b
 <h3 style="color:#2a7ae2">  Vector Space </h3>
 <section>
 <p>
+<img src="/assets/images/machine-learning/vector-space.jpg">
+<br><br>
 A vector space V is a collection (bag) of objects (vectors) that is closed under operations such as object (vector) addition and scalar (field F) multiplication, and it also needs to satisfy certain properties or axioms.
 </p>
 
