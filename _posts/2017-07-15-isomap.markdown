@@ -101,7 +101,7 @@ permalink: /machinelearning/isomap
 <li>So basically MDS becomes an optimization problem where we need to find a configuration of t-point such the difference of the above summation gives us the minimum value.</li>
 <li>But the optimization equation above is the not the exact equation that we use. We need to perform a kernel trick and perform the optimization in the inner product space, often known as Hilbert space if it&rsquo;s a complete inner product space. The intuition is to project our points in inner product higher dimensional space where it is much easier to separate the data points (becomes linearly separable).</li>
 <li>So the distance matrix is then converted to a kernel matrix of inner products X<sup>T</sup>X by 
-$$ X^T X = \frac{-1}{2} H D^(X) H $$
+$$ X^T X = \frac{-1}{2} H D^{(X)} H $$
 $$ where \; H = 1 - \frac{1}{t} e e^T \text{ and e is a column vector of all 1s}$$
 </li>
 </ul>
