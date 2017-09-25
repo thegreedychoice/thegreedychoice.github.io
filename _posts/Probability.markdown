@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Probability Theory"
-date:   2017-06-29 01:05:31 -0400
+title:  "Probability Theorygg"
+date:   2017-08-06 01:05:31 -0400
 categories: machine learning
 permalink: /machinelearning/probability-theory-part1
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Local Linear Embeddding"
-date:   2017-04-29 01:05:31 -0400
+date:   2017-06-05 01:05:31 -0400
 categories: machine learning
 permalink: /machinelearning/local-linear-embedding
 ---
@@ -60,6 +60,13 @@ $$ \phi(Y) = \sum_{j = 1}^{t} \left\| Y_i - \sum_{j = 1}^{t} W_{ij} Y_j \right\|
 </p>
 <br>
 </section>
+<section>
+	<p>
+	<strong> In the next post of Local Linear Embedding, we will prove all the equations and see how we solve the optimization problem in LLE. </strong>
+	</p>
+</section>
+
+
 <br>
 <section>
 	<h4> References:</h4>
